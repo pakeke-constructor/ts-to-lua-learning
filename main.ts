@@ -10,6 +10,12 @@ let u = {
 } as x&y&color;
 
 
+
+
+let __TS__SourceMapTraceBack: LuaMap<string, number>;
+
+
+
 let v = {} as LuaMap<number, number>;
 
 
