@@ -6,7 +6,7 @@
         "types": [
             "@typescript-to-lua/language-extensions",
             "lua-types/jit",
-            "love-typescript-definitions",
+            //"love-typescript-definitions",
         ],
 
         "strict": true 
