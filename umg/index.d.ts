@@ -9,4 +9,4 @@
 /// <reference path="./table.d.ts" />
 /// <reference path="./server.d.ts" />
 /// <reference path="./client.d.ts" />
-/// <reference path="./love-typescript-definitions/index.d.ts" />
+/// <reference path="./love/index.d.ts" />

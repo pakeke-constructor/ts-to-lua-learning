@@ -38,7 +38,7 @@ declare global {
         export function register(resource: unknown, alias: string): void;
     }
 
-    export interface Entity {
+    export type Entity = {
         readonly id: number;
         isRegular(componentName: string): boolean;
         isShared(componentName: string): boolean;
@@ -46,7 +46,7 @@ declare global {
         type(): string;
     }
     
-    export interface Group<T> {
+    export type Group<T> = {
         (this: Group<T>): LuaIterable<Entity & T>;
         // iteration, i.e. for [k,v] in group() {  }
         size(): number;

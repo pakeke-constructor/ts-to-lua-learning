@@ -7,7 +7,7 @@ type Quad = import("love.graphics").Quad;
 type Image = import("love.graphics").Image;
 
 
-interface Atlas {
+type Atlas = {
     draw(quad: Quad, x: number, y: number, r: number|undefined, sx:number|undefined, sy:number|undefined, ox:number|undefined, oy:number|undefined, kx:number|undefined, ky:number|undefined): void;
     flush(): void;
     useBatch(use: boolean): void;
@@ -17,7 +17,7 @@ interface Atlas {
 
 /** @noSelf **/
 declare namespace _clientAPI {          
-    export function on(event: string, callback: (...args: unknown[]) => void): void;
+    export function on(event: string, callback: (...args: any[]) => void): void;
     export function send(event: string, ...args: any[]): void;
     export function getUsername(): string;
 

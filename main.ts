@@ -10,9 +10,8 @@ let u = {
 } as x&y&color;
 
 
-
-
 let __TS__SourceMapTraceBack: LuaMap<string, number>;
+
 
 
 
@@ -25,6 +24,11 @@ client?.send("abc", 1,2,3)
 // hello 123
 let y: number = 10;
 
+
+var joysticks = love.joystick.getJoysticks();
+for (var js in joysticks) {
+    js.
+}
 
 
 love.draw = function() {
